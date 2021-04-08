@@ -2,6 +2,7 @@ defmodule ExticketWeb.Router do
   use ExticketWeb, :router
 
   pipeline :api do
+    plug CORSPlug, origin: "*"
     plug :accepts, ["json"]
   end
 
