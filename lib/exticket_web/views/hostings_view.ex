@@ -20,6 +20,7 @@ defmodule ExticketWeb.HostingsView do
          bedrooms_number: bedrooms_number,
          price: price,
          stay: stay,
+         firm: firm,
          guests: guests
        }) do
     %{
@@ -31,6 +32,7 @@ defmodule ExticketWeb.HostingsView do
       },
       "price" => Decimal.to_string(price),
       "stay" => stay,
+      "firm" => firm,
       "guests" => guests
     }
   end
