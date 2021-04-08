@@ -15,7 +15,8 @@ defmodule ExticketWeb.Endpoint do
     longpoll: false
 
   socket "/live", Phoenix.LiveView.Socket,
-    websocket: [timeout: 45_000, connect_info: [session: @session_options]]
+    websocket: [timeout: 45_000, connect_info: [session: @session_options]],
+    longpoll: false
 
   # Serve at "/" the static files from "priv/static" directory.
   #
